@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#Note</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="nav-bar">
+        <nav>
+            <h1><span class="n1">#</span><span class="n2">Note</span></h1> 
+        </nav>
+    </div>
+  
+  <div id="noteBox">
+  
+     <div class="note">
+    <h2 id="atm">Life Lessons</h2> 
+<p>
+Life is not about perfection, but progress. Small, consistent efforts can lead to meaningful change over time. 
+Focus on building habits that support your goals, learn from failures without fear, and stay patient with your growth. 
+Surround yourself with positive influences, take responsibility for your actions, and never stop improving yourself. 
+In the end, discipline and consistency matter more than motivation.
+</p>
+   <button id="dlt" onclick="dlt(event)">Delete</button>
+</div>
+
+  </div>
+ 
+ <button id="add" onclick="show()">+</button>
+
+<div class="overlay"> </div>
+<div class="popup">
+    <h2>Add-Note</h2>
+    <form>
+        <input placeholder="Title" id="note-title">
+        <textarea placeholder="Write Your Notes" id="userNotes"></textarea>
+    </form>
+    <button id="add-note" onclick="addingNote(),hide()">Add</button> <button id="cancel" onclick="hide()">Cancel</button>
+</div>
+
+
+ <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
